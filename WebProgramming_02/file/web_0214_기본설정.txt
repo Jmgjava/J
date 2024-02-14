@@ -1,0 +1,9 @@
+#wrap	width:100%;height:auto *** 하위 요소가 있는 경우 height: auto 보통 auto
+	.header width:100%;height:100px; 배경색임의
+		.nav width:1280px;height:80px; 부모의 가로가운데
+
+	.container  width:100%;height:500px; 배경색임의
+		.section width:1280px; height:500px; 부모의 가로가운데
+
+	.footer        width:100%;height:200px; 배경색검정계열			`
+		.footer-con width:1280px; height:500px; 부모의 가로가운데

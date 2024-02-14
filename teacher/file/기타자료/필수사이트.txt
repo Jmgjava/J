@@ -11,6 +11,9 @@ google  -> 드라이버
 git
 notion
 
+https://mvnrepository.com/artifact/com.mysql/mysql-connector-j/8.3.0 -> MySql connector 등 자료사이트
+https://www.w3.org/ -> 웹 표준 정리 사이트
+
 
 
 

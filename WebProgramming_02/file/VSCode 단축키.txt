@@ -1,0 +1,16 @@
+ctrl + shift + P -> 설정
+ctrl + -> setting
+ctrl + shift + ` -> 터미널 파워 셀 열기
+ctrl + ` -> 터미널 열기, 닫기
+Shift + Alt + (↑,↓) : 한줄 복사
+Ctrl + Shift + K -> 한줄 삭제
+Ctrl + B : 왼쪽 탐색기 창 끄기/ 켜기
+Ctrl + Pageup/Pagedown : 열어놓은 탭 이동
+Ctrl + 클릭 : 해당 함수 정의문, 링크로 이동
+Ctrl + 1 or 2 : 분할화면 이동
+Ctrl + P -> 파일 닫기
+Ctrl + W -> 현재파일 닫기
+Ctrl + Shift + W -> 모든 파일 닫기
+
+
+https://demun.github.io/vscode-tutorial/shortcuts/ 단축키

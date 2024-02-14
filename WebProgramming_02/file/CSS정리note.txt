@@ -1,0 +1,142 @@
+CSS( Cascading Style Sheets) -> HTML구조를 스타일 적용
+
+Cascading Style Sheets(CSS)는 HTML이나 XML(XML의 방언인 SVG, XHTML 포함)로 작성된 문서의 표시 방법을 기술하기 위한 스타일 시트 언어입니다.
+CSS는 요소가 화면, 종이, 음성이나 다른 매체상에 어떻게 렌더링되어야 하는지 지정합니다.
+ 
+CSS는 오픈 웹의 핵심 언어 중 하나이며, W3C 명세가 다양한 브라우저의 표준으로 작동하고 있습니다.
+과거에는 CSS 명세의 다양한 부분을 순차적으로 개발했으므로 CSS1, CSS2.1, CSS3처럼 버전을 붙이
+는 것이 가능했습니다. 그러나 공식 버전이 CSS4로 올라가지는 않을 것입니다. 
+
+*** 웹페이지를 꾸미는 스타일 언어
+
+**하나의 html문서에는 하나의 css문서를 링크(link)시키자
+**컨텐츠(이미지,동영상,오디오등), 파일(문서) 링크(연결)시 경로 설정 방법
+1. 절대경로-> 어디서든지 접근 가능 -> 웹계정 전체URL
+2. 상대경로-> 기준위치에서 접근 가능-> 현재파일위치 
+-> 같은 형제 위치 접근 css/ , ./css
+-> 한단계위 ../ 두단계위 ../../ 
+
+css 적용 방법
+1. 외부 스타일 -> 외부 css파일+html 파일에 링크(연결)-> 포플,실제 작업
+<head><head> 사이에 <link> 설정
+<head>
+<link rel="stylesheet" href="css파일경로">
+</head>
+
+2. 내부 스타일 -> <head><head> 사이에 <style></style>안에 설정
+
+3. 인라인 스타일 -> 태그 속성에 적용 
+<h1 style="width:100px;height:100px">
+기본 스타일 설정-> reset.css ->웹 작업 시 기본이 되는 스타일 설정을 모아둔 파일
+ ->공통스타일을 설정 
+
+**** css 선택자(태그,아이디,클래스,자식,하위,그룹,,,)
+-css를 적용 방법
+선택자{속성:속성값 ; 속성:속성값;}
+선택자{
+속성:속성값 ; 
+속성:속성값;
+}
+div{
+background-color:#ffff00;
+border:1px solid #ff0000;
+}
+
+** 기본적으로 html실행하면 margin,padding값이 설정 되어 있다.
+ -> 위와같이 기본 설정 되어 있는 스타일을 초기화 시키는 css -> reset.css
+
+
+reset.css -> 기본적인 스타일을 설정-> 모든 파일에 공유
+
+1.프로젝트 폴더생성
+2. 하위폴더 생성 css, images, js
+3. css폴더 아래 reset.css 생성
+reset.css 내용->
+*{
+margin:0;
+padding:0;
+}
+html , body{
+width:100%;
+}
+/*css 주석*/
+/*수업 중에 추가*/
+css
+↘ common
+ 	↘ reset.css
+images
+js
+
+html파일
+
+
+[[ CSS선택자 ]]
+* -> 전체선택자, html모든 요소 선택
+*{
+margin:0;
+padding:0;
+}
+태그 선택자 -> 선택된 태그 선택자 모두
+h1{width:100px;height:100px;}
+h2{width:100px;height:100px;}
+h3{
+width:100px;
+height:100px;
+ }
+
+아이디 선택자 -> 하나의 요소만 선택 , 태그명#아이디명 -> #아이명
+예) <div id="wrap"></div> <p id="p1"></p> p#p1
+div#wrap -> #wrap
+*** 태그명을 생략하면 div요소라 인식 #아이디명
+
+클래스 선택자 -> 하나이상의 요소에 선택, 동일한 스타일 적용, -> .클래스명
+ 가장 많이 사용하는 선택자 . 태그명.클래스명
+예) <div class="header"></div> div.header -> .header
+<p class="s1"></p><div class="s1"></div><h1 class="s1"></h1>
+p.s1, dis.s1,h1.s1 -> .s1{}
+*** 태그명을 생략하면 div요소라 인식
+
+*** 하나의 태그에 여러 클래스가 설정 되었을 경우
+<div class="box b1">BOX(블록)</div> -> .box.b1
+
+자식 선택자 -> 선택자>자식태그(선택자 바로아래 태그)
+.header > .inner-header
+
+하위 선택자 -> 선택자 하위태그(선택자 하위태그-> 자식포함)
+.header .inner-header
+
+*** block 요소 가로가운데 정렬방법
+1. 하나만 있을 경우
+margin : 0 auto; /* 부모의 가로 가운데 */
+
+
+*** 컨텐츠의 가로 세로 가운데 스타일 적용 방법
+1. 부모요소(height : auto)에 위/아래 padding을 동일하게 설정 padding:20px 0;
+2. 텍스트가 한 행 있을 경우 line-height를 부모의 높이와 같게 설정하면 부모의 세로 가운데
+3. flex
+
+
+***margin -> 부모 또는 다른 컨텐츠(형제)와의 여백
+margin-top : 윗 여백
+margin-left : 왼 여백
+margin-right : 오른 여백
+margin-bottom : 아래 여백
+margin : 위 아래 왼 오
+
+***padding : 나와 내 자식과의 여백 *** 부모높이가 auto일 경우
+padding-top : 윗 여백
+padding-left : 왼 여백
+padding-right : 오른 여백
+padding-bottom : 아래 여백
+padding : 위 아래 왼 오
+
+
+** 텍스트 관련
+font-size -> 폰트크기, 기본(16px)
+color -> 글자 색상
+font-weight -> 굵기, bold(굵다)
+font-family -> 글꼴, 바탕체, 돋움.....
+-문단
+text-align:left/right/center -> 텍스트의 가로 정렬 -> 부모에 설정
+text-decoration: 	-> 밑줄 유무 - a태그는 기본이 under-line(밑줄하나)
+line-height:	-> 한 행의 간격

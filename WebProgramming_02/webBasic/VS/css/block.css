@@ -1,0 +1,11 @@
+@import url(common/reset.css); /* common 폴더 하위 reset.css */
+/* block1.css */
+div{
+  background-color: #ff0000;
+  width: 100px;
+  height: 100px;
+}
+
+#div1{
+  background-color: rgba(8, 166, 214, 0.897);
+}
