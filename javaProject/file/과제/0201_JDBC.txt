@@ -1,0 +1,44 @@
+-- 테이블 생성  -> Oracle 이용
+drop table member0201;
+create table member0201(
+	no	number not null
+	userId    varchar2(100) not null,
+	userPw   varchar2(100) not null,
+	age	number(3)        not null,
+	name    varchar(100) not null,
+	primary key(no)
+);
+-- 더미 데이터 -> 테스트 
+-- 더미 테이터 5개를 insert를 이용해서 member0201테이블에 저장
+insert into member0201(no,userId, userPw,age,name) values(1,'m1','1111',11,'name1');
+insert into member0201(no,userId, userPw,age,name) values(2,'m2','2111',21,'name2');
+insert into member0201(no,userId, userPw,age,name) values(3,'m3','3111',31,'name5');
+insert into member0201(no,userId, userPw,age,name) values(4,'m4','4111',41,'name5');
+insert into member0201(no,userId, userPw,age,name) values(5, 'm5','5111',51,'name5');
+
+commit;
+rollback;
+
+select * from membermember0201;
+-- 프로젝트  java27
+-- 패키지 5개
+-- org.java.controller
+-- org.java.service
+-- org.java.dao
+-- org.java.dto
+-- org.java.connect
+
+-- org.java.connect 패키지 아래 DBConnect클래스 
+-- -> static Connection getConnection() 매서드생성 -> < 오라클과 연동 ,예외처리 필수
+
+-- org.java.dto 패키지 아래member0130 테이블 과 연관 있는  MemberDto를  만들어 보시오.
+-- -> 필드는 private, getters,setters,기본, 모든필드매개인자 생성자, toString()
+
+-- org.java.dao 패키지 아래 MemberDao를 싱글톤 패턴으로 만들어 보시오.
+
+-- org.java.service 패키지 아래 MemberService인터페이스 생성 후 구현 클래스 4개 오버라이딩 
+-- -> void executeQueryService() throws IOException,SQLException;
+-- -> MemberInsert,MemberUpdate,MemberSelect,MemberDelete
+
+-- org.java.controller 패키지 아래 MemberController클래스 생성
+

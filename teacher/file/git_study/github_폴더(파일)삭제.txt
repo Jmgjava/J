@@ -1,0 +1,13 @@
+
+1. 로컬은 삭제안하고 github만 삭제
+github 올린 파일 삭제
+$ git rm --cached        파일명.확장자
+$ git commit -m   "Delete HelloJAVA.class"
+
+github 올린 폴더 삭제
+$ git rm --cached -r   폴더
+$ git commit -m "delete folder"
+
+$ git rm --cached -r .metadata
+$ git commit -m '.metadata delete'
+$ git puh

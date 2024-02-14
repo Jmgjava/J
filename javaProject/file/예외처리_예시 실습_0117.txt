@@ -1,0 +1,53 @@
+------------------------------------------------------------------
+MVC Model2 기본 패키지 구조 -> 프레임워크 ->Spring boot
+1. 패키지 생성
+2. 각패키지 별 클래스 생성
+3. 케넥션 ->DB연동 객체 생성 static  -> 공유
+
+
+org.java.controller 	-> 컨트롤러  ->일 시키고 결과를 사용자에게 반환(View->브라우저표시)
+	MemberController
+org.java.service	->서비스	  -> 컨트롤러에서 시킨일 수행, DB관련일은 DAO 처리-><-결과반환
+	MemberService-> 인터페이스  void excuteQueryService() throws SQLException,IOException;
+
+	MemberInsertService -> 회원가입
+	MemberSelectService -> 회원조회
+	MemberUpdateService -> 회원수정
+	MemberDeleteService -> 회원탈퇴
+org.java.dao	->DAO	  ->서비스에서DB관련 시킨일 수행 DAO-><-DB
+	MemberDao
+		insert()
+		update()
+		delete()
+		select()
+
+org.java.dto	->DTO	  -> DB의 데이터(테이블)과  연관(매팽)있는 자바 클래스
+	MemberDto 	-> getters,setters,NoArgsContstruct,AllArgsContstruct,toString()
+		**필드 ->private
+		int no;// 회원번호
+		String userId;//아이디
+		String userPw//비빌번호
+		String name;//이름
+		int age;//나이
+
+org.java.connect 	-> DB연동	  ->DB관련 일을 처리 할 때 기본적으로 연동 되는 클래스
+	DBConnect
+
+
+회원가입 앱 
+
+회원가입
+
+-회원가입-
+1. 드라이버
+2. DB연동  -> 드라이버 JDBC
+3. 회원가입
+4. DB연동 X
+
+-회원조회-
+1. 드라이버
+2. DB연동
+3. 회원조회
+4. DB연동 X
+
+------------------------------------------------------------------

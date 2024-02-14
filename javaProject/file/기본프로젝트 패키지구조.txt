@@ -1,0 +1,14 @@
+======   실제 프로젝트 예시 ========
+
+패키지
+
+// @Controller  -> Cotroller
+org.java.controller  // -> service에서 일을 시키고 결과 반환 받는다-> 콘솔에 표시   1
+// @Service   -> Service
+org.java.service       // -> controller에서서 일 시킨걸 수행 하고 결과 값을 반환 해준다 2
+// DAO              -> dao -> 데이터베이스에 접근해서 CRUD 수행
+org.java.dao	// ->service중에서 DB에 관련 일을 수행 하고 결과를 반환 해준다 3
+// DTO	       -> dto ->  데이터 베이스 테이블과 연결,매핑 수행
+org.java.dto               // ->  dao수행 중 DB에 데이터를 연결 시켜주는 역할을 수행 -> DB테이블과 구조같다 4
+// JDBC		// oracle, mysql ->  RDBMS
+org.java.connect      // -> java와 데이터베이스(DB)를 연결 해주는 역할 5

@@ -1,0 +1,121 @@
+@import url(common/reset.css);
+
+#wrap{
+    width: 100%;
+}
+
+/*header시작*/
+
+#wrap .header{
+    width: 1600px;
+    height: auto;
+    background-color: rgb(215, 200, 189);
+    margin: 0 auto;
+
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.header .nav{
+    width: 1200px;
+    height: 80px;
+    background-color: #ffffff;
+    margin: 0 auto;  /* 부모 가로가운데*/
+
+    /*자식요소에 가로정렬*/
+    display: flex;
+    /*자식요소가 부모의 좌우에 정렬*/
+    justify-content: space-between;
+}
+.header .nav h1.logo{
+    width: 100px;
+    height: 80px;
+}
+/*기본이미지설정*/
+.header .nav h1.logo img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.header .nav .gnb{
+    width: 500px;
+    height: 80px;
+}
+
+.header .nav .gnb ul{    
+    /*자식요소에 가로정렬*/
+    display: flex;
+    /*자식요소가 부모의 좌우에 정렬*/
+    justify-content: space-between;
+}
+.header .nav .gnb ul li{
+    width: 20%;
+    text-align: center;
+    line-height: 80px;
+    background-color: rgb(233, 236, 186);
+}
+
+/*container시작*/
+#wrap .container{
+    width: 1600px;
+    height: 600px;
+    background-color: #cccccc;
+    margin: 0 auto;
+}
+
+.container .join{
+    width: 600px;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+}
+
+.container .join table{
+    width: 100%;
+}
+
+
+
+.container .join table th h1.title{
+    background-color: black;
+    color: #ffffff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.container .join table tbody tr td{
+    /* padding-left:10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px; */
+
+    /* padding: 위 오른 아래 왼; */
+    /* padding: 10px 10px 10px 10px; */
+    padding: 10px;
+}
+.container .join table tbody tr.lastTr td{
+    text-align: center;
+}
+
+
+
+table,tr, th,td{
+    border-collapse: collapse;
+    border: 1px solid #cccccc;
+}
+
+
+
+/*textarea 고정*/
+textarea{
+    resize: none;
+    width: 100%;
+}
+
+/*footer시작*/
+#wrap .footer{
+    width: 1600px;
+    height: 200px;
+    background-color: black;
+    margin: 0 auto;
+}

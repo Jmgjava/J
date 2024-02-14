@@ -1,0 +1,41 @@
+Git -> 버전관리  -> github
+1. 이력(소스,버전)을 관리하는 프로그램
+2. 저장소(Git repository)란 말그대로 파일이나 폴더를 저장
+3. 파일이 변경 이력 별로 구분되어 저장
+4. 파일과 폴더 이력을 관리하는 저장소
+
+원격 저장소와 로컬 저장소
+1. 원격 저장소(Remote Repository): 파일이 원격 저장소 전용 서버에서 관리->  공유하기 위한 저장소
+2. 로컬 저장소(Local Repository): 내 PC에 파일이 저장되는 개인 전용 저장소
+3.  로컬 저장소->  원격 저장소에 업로드, 원격 저장소->  로컬 저장소
+
+원격 저장소와 로컬 저장소
+1. 새로 만든다 -> ex) github
+2. 원격 저장소를 로컬 저장소로 복사
+
+1. github 회원가입
+2. local pc  자격증명관리 -> token
+3. 처음 git설치 할 경우   -> 
+git config --global user.name "Your Name"
+git config --global user.email you@example.com
+
+echo "# JavaStudy" >> README.md
+git init				#1. git 초기화
+git add README.md
+
+git add.				#2. 모든 파일 추가 commit -> push
+git commit -m "first commit"	#3. commit message
+git branch -M main		#main 변경 master
+git remote add origin https://github.com/#4. 저장소(한번만 연결하면O)
+git push -u origin master		#5. github에 추가
+
+
+토큰 넘버 :
+
+
+*새로 추가된 부분 commit하기
+1. git이 설치된 폴더에 cmd
+2. git add .
+3. git commit -m '메시지' (이 메시지는 repository에 들어감 아무거나여도 상관없는듯?)
+4. git push -u origin master
+5. commit 완료

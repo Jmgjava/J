@@ -1,0 +1,38 @@
+@import url(common/reset.css);
+
+h1 {
+    color: #ff0000;
+    background-color: #ffff00;
+}
+
+h2 {
+    color: #0000ff;
+    background-color: #ff00ff;
+}
+
+h3 {
+    width: 100px;
+    height: 100px;
+    color: #000000;
+    background-color: aquamarine;
+}
+
+h4 {
+    width: 200px;
+    height: auto;
+    color: #ff00ff;
+    background-color: #ffff00;
+}
+
+h5 {
+    width: 300px;
+    height: 150px;
+    color: bisque;
+    background-color: #ff00ff;
+}
+
+h6 {
+    width: auto;
+    height: 100px;
+    background-color: aquamarine;
+}

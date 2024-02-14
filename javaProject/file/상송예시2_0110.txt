@@ -1,0 +1,12 @@
+패키지 생성 -> 
+org.project.service 부모클래스-> 일하는 매서드
+org.project.controller  컨트롤러
+org.project.dao          DB에 엑세스해서 처리
+org.project.dto           DB객체와 연결객체
+
+org.project.service 패키지 안에
+ExcuteCommend클래스 생성 -> excuteQueryService() 매서드 생성(void)
+ActionInsert    클래스 생성하고  ->ExcuteCommend클래스 excuteQueryService() 매서드 오버라이드해서 구현->콘솔에 “회원가입”
+ActionUpdate 클래스 생성하고  ->ExcuteCommend클래스 excuteQueryService() 매서드 오버라이드해서 구현->콘솔에 “회원수정”
+ActionDelete  클래스 생성하고  ->ExcuteCommend클래스 excuteQueryService() 매서드 오버라이드해서 구현->콘솔에 “회원탈퇴”
+ActionSelect  클래스 생성하고  ->ExcuteCommend클래스 excuteQueryService() 매서드 오버라이드해서 구현->콘솔에 “회원조회”

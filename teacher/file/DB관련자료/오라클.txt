@@ -1,0 +1,14 @@
+oracle   11g xe
+https://www.oracle.com/database/technologies/xe-prior-release-downloads.html
+
+user          : system
+password:1234
+
+설치후 
+cmd -> 
+sqlplus
+
+*** sqldeveloper 설치
+
+https://www.oracle.com/database/sqldeveloper/technologies/download/
+

@@ -1,0 +1,49 @@
+1.) 찾기(Search)
+Ctrl + H : 파일 검색 및 변환
+Ctrl + F : 문자열 찾기
+Ctrl + K : 현재 선택된 문자열과 같은 문자열 찾기
+Ctrl + E: 열려있는 미니창
+Ctrl + Shift + R : 모든 파일 찾기
+Ctrl + Shift + E: 열려있는 파일 찾기
+Ctrl + Shift + G: 호출한 곳
+F3 : 클래스 및 메소드가 선언된 위치로 이동
+2.) 디버깅(Debug)
+Ctrl + Shift + B : 현재 커서 위치에서 브레이크 포인트(Break Point) 설정 및 해제
+F5 : 선택된 행 메소드 내부로 이동
+F6 : 선택된 행 아래로 이동
+F7 : 실행 중인 메소드 외부로 이동
+F8 : 다음 디버깅 포인트로 이동
+F11 : 디버그 모드로 실행
+Ctrl + R : 현재 라인까지 실행
+Ctrl + F2 : 디버깅 모드 종료
+3.) 대소문자 변환
+Ctrl + Shift + X : 선택된 문자열을 모두 대문자로 변환
+Ctrl + Shift + Y : 선택된 문자열을 모두 소문자로 변환
+4.) 소스 편집
+Ctrl + Shift + W : 이클립스에 열린 파일 모두 닫기
+Ctrl + Shift + F4 : 이클립스에 열린 파일 모두 닫기
+Ctrl + Shift + O : 자동으로 import 하기(사용하지 않는 클래스 자동 삭제), 패키지 자동 정렬
+Ctrl + Shift + S : getter/setter 자동 생성
+Ctrl + Shift + Space : 메소드 파라미터 목록보기
+Ctrl + Shift + F : 소스 코드 자동 정리
+Ctrl + Sifth + R : Open Source
+Ctrl + Shift + T : 클래스 찾기
+Ctrl + Shift + 방향키  : 한 단어씩 블록 선택
+Ctrl + W : 현재 창 닫기
+Ctrl + D : 커서 위치 한 줄 삭제
+Ctrl + L : 특정번호로 이동
+Ctrl + S : 저장 및 컴파일
+Ctrl + Q : 마지막 편집 위치로 이동
+Ctrl + M : 소스 창 전체 화면으로 전화 및 해제
+Ctrl + N : 새로운 파일 및 프로젝트 생성
+Ctrl + O : 메소드 또는 속성 이동
+Ctrl + Space : 코드 자동완성
+Ctrl + /  : 한 줄 주석 처리 또는 해제
+Alt + 왼쪽 방향키 : 이전 작업화면으로 이동
+Alt + 오른쪽 방향키 : 이후 작업화면으로 이동
+5) 에디터(Editor) 변환
+Ctrl + F6 : 열린 페이지로 이동
+Ctrl + F7 : 뷰간 전환
+Ctrl + F8 : 퍼스펙티브간 전환
+Ctrl + E : 뷰 화면의 탭에 열린 페이지로 이동
+F12 : 에디터로 포커스 이동

@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* reset.css 기본, 공통 스타일 */
+*{
+    margin: 0; /* 나와 부모 또는 다른 컨텐츠와의 여백*/
+    padding: 0; /* 나와 자식 컨텐츠와이 여백*/
+}
+html, body{
+    width: 100%;
+}
+a{
+    color: #000000;
+    text-decoration: none;
+}
+ul,li{
+    list-style: none;
+}

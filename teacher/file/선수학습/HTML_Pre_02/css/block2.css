@@ -1,0 +1,29 @@
+@import url(common/reset.css);
+#wrap{
+    width: 1200px;
+    height: 600px;
+    background-color: #cccccc;
+    margin: 0 auto;/*부모의 가로 가운데*/
+}
+#wrap .header{
+    width: 1200px;
+    height: 100px;
+    background-color: black;
+    color: #ffffff;
+    text-align: center; /*자식 컨텐츠 가로 가운데*/
+    line-height: 100px; /*부모높이와 같으면 세로가운데(한줄일경우)*/
+}
+#wrap .container{
+    width: 100%;
+    height: 400px;
+    background-color: #ffff00;
+    text-align: center;
+    line-height: 400px;
+}
+#wrap .footer{
+    width: 100%;
+    height: 100px;
+    background-color: aquamarine;
+    text-align: center;
+    line-height: 100px;
+}

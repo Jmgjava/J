@@ -1,0 +1,67 @@
+1. 자바언어 
+사람	  번역(컴파일) 	             기계(컴퓨터)
+source       번역기(컴파일러)	실행      기계어(0 ,1)
+.java             .class                       .exe
+
+Java Development Kit(Java 개발 도구)
+
+JDK 1.8    || ~ JDK11
+사람 -> IDE(통합개발툴) -> 이클립스, 인텔리제이(Spring),메모장
+Build ->    사용 할 수 있는  APP  -> Ant, Gradle,Maven
+
+Deploy ->  배포 -> 웹, AWS(EC2)-> 무료 1.8,11
+
+시스템 환경변수 -> Path-> 앱을 등록 하면 
+정상적으로 자바등록 확인
+
+윈도우+R  -> cmd 
+
+
+HellowWorld.java
+
+
+ class HellowWorld{
+
+	public static void main(String[] args){
+
+		System.out.println("Hellow World");
+
+	}
+
+}
+
+https://www.tiobe.com/tiobe-index/
+
+
+
+명령어
+
+dir -> 현재 디렉토리 구조(폴더, 파일)
+cd -> 디렉토리(폴더) 이동    
+	cd 이동할 디렉토리(폴더)
+exit -> CMD창 닫기
+
+
+1. 이클립스 -> java, WebPrograming(Model2), JSP,Servlet
+이클리스 2021-12  -> JDK11
+
+
+프로젝트 생성 -> 패키지(비슷한기능의 클래스를 모아놓은 디렉토리) 생성 -> 클래스 생성
+
+
+2.인텔리제이 -> Spring boot -> Project1,2,3
+
+
+
+***** 오라클 데이터베이스 설치
+
+
+
+
+
+
+
+
+
+
+

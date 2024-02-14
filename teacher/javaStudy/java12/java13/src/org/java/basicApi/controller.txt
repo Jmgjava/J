@@ -1,0 +1,96 @@
+
+
+	@WebServlet("*.mo")
+	public class MemberController extends HttpServlet {
+
+
+		@Override
+		protected void doPost(HttpServletRequest request, HttpServletResponse response)
+				throws ServletException, IOException {
+
+			request.setCharacterEncoding("utf-8");
+
+			String path = request.getContextPath();
+			String uri = request.getRequestURI();
+			String basicURL = uri.substring(path.length(),uri.length()-3);
+
+
+			String url = "";
+
+			MemberCommend action = null;
+
+			if (basicURL.equals("/Main")) {
+				url = "/main.jsp";
+
+			} else if (basicURL.equals("/loginView")) {
+				url = "/login.jsp";
+
+			} else if (basicURL.equals("/Alba")) {
+				url = "/memberChecked.jsp";
+
+			} else if (basicURL.equals("/JoinView")) {
+				url = "/join.jsp";
+
+			} else if (basicURL.equals("/updateView")) {
+				action = new UpdateViewMo();
+				action.excutCommend(request, response);
+				url = (String) request.getAttribute("url");
+
+			}else if (basicURL.equals("/idChecked")) {
+				action = new IdCheckedMo();
+				action.excutCommend(request, response);
+				return;
+			} else if (basicURL.equals("/MemberList")) {
+				action = new MemberListMo();
+				action.excutCommend(request, response);
+				url = (String) request.getAttribute("url");
+
+			} else if (basicURL.equals("/MemberView")) {
+				action = new MemberViewMo();
+				action.excutCommend(request, response);
+				url = (String) request.getAttribute("url");
+
+			} else if (basicURL.equals("/MemberView2")) {
+				action = new MemberViewMo2();
+				action.excutCommend(request, response);
+				url = (String) request.getAttribute("url");
+
+			} else if (basicURL.equals("/DeleteView")) {
+				url = "/memberDelete.jsp";
+
+			} else if (basicURL.equals("/AjaxLogout")) {
+				action = new AjaxLogoutMo();
+				action.excutCommend(request, response);
+				return;
+			} else if (basicURL.equals("/JoinView")) {
+				url = "/join.jsp";
+
+			} else if (basicURL.equals("/AjaxLogin")) {
+				action = new AjaxLogin();
+				action.excutCommend(request, response);
+				return;
+			} else if (basicURL.equals("/AjaxJoin")) {
+				action = new AjaxJoin();
+				action.excutCommend(request, response);
+				return;
+			} else if (basicURL.equals("/AjaxModify")) {
+				action = new AjaxModify();
+				action.excutCommend(request, response);
+				return;
+			} else if (basicURL.equals("/AjaxDeleteOk")) {
+				action = new AjaxDeleteOk();
+				action.excutCommend(request, response);
+				return;
+			} else if (basicURL.equals("/JobChecked")) {
+				action = new JobChecked();
+				action.excutCommend(request, response);
+				return;
+			}
+
+			RequestDispatcher dispatcher = request.getRequestDispatcher(url);
+			dispatcher.forward(request, response);
+
+		}
+	}
+
+}

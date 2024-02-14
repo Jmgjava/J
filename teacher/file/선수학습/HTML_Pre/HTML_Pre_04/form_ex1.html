@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="css/form_ex1.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="header">
+            <div class="nav">
+                <h1 class="logo">
+                    <a href="#"><img src="images/logo.png" alt="logo"></a>
+                </h1>
+                <div class="gnb">
+                    <ul>
+                        <li><a href="#">LIST</a></li>
+                        <li><a href="#">LIST</a></li>
+                        <li><a href="#">LIST</a></li>
+                        <li><a href="#">LIST</a></li>
+                        <li><a href="#">LIST</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="join">
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="2">
+                                <h1 class="title">회원가입</h1>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <form action="/" method="post" id="joinForm">
+                            <tr>
+                                <td> <label for="userId">아이디</label></td>
+                                <td><input type="text" name="userId" id="userId"> </td>
+                            </tr>
+                            <tr>
+                                <td><label for="userPw">비빌번호</label></td>
+                                <td><input type="password" name="userPw" id="userPw"></td>
+                            </tr>
+                            <tr>
+                                <td> <label for="gender">성별</label></td>
+                                <td>
+                                    <input type="radio" name="gender" class="gender" value="남자" checked> 남자
+                                    <input type="radio" name="gender" class="gender" value="여자"> 여자
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> <label for="skill">습득기술</label></td>
+                                <td> <input type="checkbox" name="skill" class="skill" value="HTML" checked> HTML
+                                    <input type="checkbox" name="skill" class="skill" value="JAVA"> JAVA
+                                    <input type="checkbox" name="skill" class="skill" value="SPRING"> SPRING
+                                    <input type="checkbox" name="skill" class="skill" value="MYSQL"> MYSQL</td>
+                            </tr>
+
+                            <tr>
+                                <td><label for="city">출신고향</label></td>
+                                <td><select name="city" id="city">
+                                        <option value="서울" selected>서울</option>
+                                        <option value="부산">부산</option>
+                                        <option value="춘천">춘천</option>
+                                        <option value="전주">전주</option>
+                                    </select> </td>
+                            </tr>
+                            <tr>
+                                <td><label for="userEmail">이메일</label></td>
+                                <td><input type="email" name="userEmail" id="userEmail"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="memo">메모</label></td>
+                                <td><textarea name="memo" id="memo" cols="30" rows="10"></textarea></td>
+                            </tr>
+
+                            <tr class="lastTr">
+                                <td colspan="2">
+
+                                    <!-- reset(초기화) -->
+                                    <input type="reset" value="초기화">
+                                    <!-- 자바스크립트 이벤트 설정 -->
+                                    <input type="button" value="이벤트설정" id="idCheckedBtn">
+
+                                    <input type="submit" value="회원가입실행">
+                                </td>
+                            </tr>
+                        </form>
+                    </tbody>
+
+                </table>
+
+
+                <script>
+                    // 아이디 idCheckedBtn 선택해서 변수 idCheckedBtn  설정
+                    const idCheckedBtn = document.querySelector('#idCheckedBtn');
+                    // idCheckedBtn click -> idCheckedBtnFn 함수를 구현 해라
+                    idCheckedBtn.addEventListener('click', idCheckedBtnFn);
+                    // idCheckedBtnFn 함수 -> 
+                    function idCheckedBtnFn() {
+                        // 팝업창을 실행 시켜라!!
+                        alert("클릭이벤트실행!!!");
+                    }
+                </script>
+            </div>
+        </div>
+        <div class="footer"></div>
+    </div>
+
+</body>
+
+</html>
