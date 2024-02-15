@@ -11,6 +11,15 @@ Ctrl + 1 or 2 : 분할화면 이동
 Ctrl + P -> 파일 닫기
 Ctrl + W -> 현재파일 닫기
 Ctrl + Shift + W -> 모든 파일 닫기
+Ctrl + Shift + P -> 모든 파일 정렬
 
 
 https://demun.github.io/vscode-tutorial/shortcuts/ 단축키
+
+확장 프로그램
+Color Highlight
+Beautify
+Auto Rename Tag
+CSS Peek
+Live SErver
+Korean Language

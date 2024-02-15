@@ -1,0 +1,19 @@
+@import url(./common/reset.css);
+
+ol{
+  border: 1px solid #ff0000;
+}
+
+ol li {
+  border: 1px solid #00ffff;
+}
+
+ul{
+  list-style: none; /* 기본 reset.css 에 작성 */
+  border: 1px dashed #0ff000;
+}
+
+ul li {
+  list-style: none; /* 기본 reset.css 에 작성 */
+  border: 1px dashed #f0ff;
+}
