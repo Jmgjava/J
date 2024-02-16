@@ -1,0 +1,56 @@
+.#wrap	w100%;hauto	*** border:1px solid 검정;
+	.header	w100%;hauto;
+		.nav  w1200;hauto; 배경색;  가로가운데   flex
+			h1.logo  w100;h50 ; 부모왼쪽
+			.gnb	w500;hauto;부모오른쪽
+				.gnb>ul   flex 설정  ******
+				.gnb>ul>li*5 가로정렬  
+	.container    w100%;hauto
+		
+
+
+
+	.footer	w100%;hauto
+		.footer-con  w1200;h200 가로가운데 
+
+1. 설계
+2. HTML
+3. CSS
+4. Javascript
+5. 테스트 -> 수정
+6. 배포
+
+https://pixabay.com/ko/
+무료이미지  -> 10개
+
+.container  
+ 배경이미지로 heart.png
+ 크기 30*30
+반복유무 XY로 반복
+포지션 정중앙
+배경색상은 흰색
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

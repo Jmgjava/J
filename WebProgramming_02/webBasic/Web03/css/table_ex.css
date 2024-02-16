@@ -1,0 +1,94 @@
+@import url(./common/reset.css);
+/* table_ex.html */
+
+.join {
+  width: 100%;
+  /* height: auto; */
+  height: 100vh;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+}
+
+.join .join-con {
+  width: 600px;
+  height: auto;
+}
+
+table,
+th,
+td {
+  border: 1px solid olive;
+  border-collapse: collapse;
+}
+
+.join .join-con table {
+  width: 100%;
+  /* border: 1px solid #0ff000; */
+}
+
+.join .join-con table thead tr th {
+  font-size: 20px;
+  background-color: #000000;
+  color: #fff;
+  padding : 10px 0;
+}
+
+.join .join-con table tbody tr {
+  padding: 10px 0;
+}
+
+.join .join-con table tbody tr td {
+  padding: 10px 5px;
+}
+
+.join .join-con table tbody tr td.ttd {
+  background-color: silver;
+}
+
+.join .join-con table tbody tr td label {
+  color: #fff;
+}
+
+/* 아이디 */
+.join .join-con table tbody tr td.class1 input[type=text] {
+  width: 200px;
+  height: 25px;
+}
+/* 비밀번호 */
+.join .join-con table tbody tr td.class1 input[type=password] {
+  width: 200px;
+  height: 25px;
+}
+/* 성별 */
+.join .join-con table tbody tr td.class1 input[type=radio] {
+  width: 15px;
+  height: 20px;
+}
+/* 취미 */
+.join .join-con table tbody tr td.class1 input[type=checkbox] {
+  width: 30px;
+  height: auto;
+}
+/* 전화번호 */
+.join .join-con table tbody tr td.class2 select {
+  width: 100px;
+  height: 20px;
+}
+
+.join .join-con table tbody tr td.class2 input[type=text] {
+  width: 120px;
+  height: 30px;
+}
+
+/* 자기소개 */
+.join .join-con table tbody tr td.class2 textarea {
+  width: 100%;
+  resize: none;
+}
+/* 최종 button */
+.join .join-con table tbody tr td.final {
+  background-color: silver;
+  text-align: center;
+}
