@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>table 예제</title>
+  <link rel="stylesheet" href="css/table_ex.css">
+</head>
+
+<body>
+
+  <div class="join">
+    <div class="join-con">
+      <form action="joinOk.do" method="POST" id="joinForm">
+        <table>
+          <thead>
+            <tr>
+              <th colspan="2">회원가입</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="ttd">
+                <label for="Id">아이디</label>
+              </td>
+              <td class="class1">
+                <input type="text" name="userId" id="Id" maxlength="10">
+              </td>
+            </tr>
+            <tr>
+              <td class="ttd">
+                <label for="Pw">비밀번호</label>
+              </td>
+              <td class="class1">
+                <input type="password" name="userPw" id="Pw" maxlength="10">
+              </td>
+            </tr>
+            <tr>
+              <td class="ttd">
+                <label for="Gender">성별</label>
+              </td>
+              <td class="class1">
+                <input type="radio" name="Gender" class="Gender" value="M">남
+                <input type="radio" name="Gender" class="Gender" value="W">여
+              </td>
+            </tr>
+            <tr>
+              <td class="ttd">
+                <label for="hobby">취미</label>
+              </td>
+              <td class="class1">
+                <input type="checkbox" name="hobby" id="hobby" value="health">운동
+                <input type="checkbox" name="hobby" id="hobby" value="movie">영화
+                <input type="checkbox" name="hobby" id="hobby" value="game">게임
+                <input type="checkbox" name="hobby" id="hobby" value="travel">여행
+              </td>
+            </tr>
+            <tr>
+              <td class="ttd">
+                <label for="call">전화번호</label>
+              </td>
+              <td class="class2">
+                <select name="phone" id="phone">
+                  <option value="">선택</option>
+                  <option value="010">010</option>
+                  <option value="011">011</option>
+                  <option value="012">012</option>
+                </select>
+                <input type="text" name="phone" id="phone1">
+                <input type="text" name="phone" id="phone2">
+              </td>
+            </tr>
+            <tr>
+              <td class="ttd">
+                <label for="city">출신고향</label>
+              </td>
+              <td class="class2">
+                <select name="city" id="city">
+                  <option value="Seoul">서울</option>
+                  <option value="Busan">부산</option>
+                  <option value="Jeju">제주</option>
+                </select>
+              </td>
+
+            <tr>
+              <td colspan="2" class="final">
+                <label for="memo">자기소개</label>
+            </tr>
+            <td class="class2" colspan="2">
+              <textarea name="memo" id="memo" cols="30" rows="10">
+              </textarea>
+            </td>
+            <tr>
+              <td colspan="2" class="final">
+                <input type="reset" value="초기화">
+                <input type="submit" value="최종확인">
+              </td>
+            <tr>
+          </tbody>
+          <tfoot>
+
+          </tfoot>
+        </table>
+      </form>
+    </div>
+
+  </div>
+
+</body>
+
+</html>

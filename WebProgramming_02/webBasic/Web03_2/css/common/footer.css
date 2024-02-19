@@ -1,0 +1,22 @@
+/* footer */
+
+.footer {
+  width: 100%;
+  height: auto;
+  background-color: #222222;
+
+  display: flex;
+  justify-content: center;
+}
+
+.footer .footer-con{
+  width: 1200px;
+  height: 150px;
+  background-color: #000000;
+  color: #fff;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

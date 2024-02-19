@@ -1,0 +1,89 @@
+/* header */
+
+/* header */
+
+.header {
+  width: 100%;
+  height: 100px;
+  border: 1px solid;
+  box-sizing: border-box;
+  padding: 20px 10px;
+
+
+  display: flex;
+  flex-direction: row;
+  /* 기본row(생략가능), 주축을 설정 */
+  justify-content: center;
+  /* 주축 방향으로 정렬 */
+  /* 반대축 */
+  align-items: center;
+}
+
+.header .nav {
+  width: 1200px;
+  height: auto;
+  background-color: silver;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: row;
+  /* 생략 ->row */
+  /* 주축 방향 정렬 */
+  justify-content: space-between;
+}
+
+.header .nav h1.logo {
+  width: 100px;
+  height: 50px;
+}
+
+/* img 여백제거공식 */
+.header .nav h1.logo a img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.header .nav .gnb {
+  width: 500px;
+  height: 50px;
+}
+
+.header .nav .gnb ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .nav .gnb ul li {
+  /* width: 20%; */
+  flex: 1;
+  height: 50px;
+  border: 1px solid silver;
+
+  /* text-align: center;
+  line-height: 50px; */
+  display: flex;
+  flex-direction: row;
+  /* 주축(중심축) */
+  justify-content: center;
+  /* 주축방향정렬 */
+  align-items: center;
+  /* 주축반대방향정렬 */
+
+  background-color: #000000;
+  color: violet;
+}
+
+.header .nav .gnb ul li a {
+  background-color: inherit;
+  color: inherit;
+  font-size: 11px;
+}
+
+.header .nav .gnb ul li:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #000000;
+  text-decoration: underline;
+}

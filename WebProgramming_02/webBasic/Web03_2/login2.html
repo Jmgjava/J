@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>로그인2</title>
+  <link rel="stylesheet" href="./css/login2.css">
+</head>
+
+<body>
+  <div id="wrap">
+    <div class="header">
+      <div class="nav">
+        <h1 class="logo">
+          <a href="index.html"><img src="./images/logo.png" alt="logo"></a>
+        </h1>
+        <div class="gnb">
+          <ul>
+            <li><a href="#">Shop</a></li>
+            <li><a href="memberList.html">List</a></li>
+            <li><a href="#">Admin</a></li>
+            <li><a href="join.html">join</a></li>
+            <li><a href="login2.html">login</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="login">
+        <form action="loginOk.do" method="POST" id="loginForm">
+          <div class="login_data">
+            <ul>
+              <li>
+                <h1 class="title">로그인</h1>
+              </li>
+              <li>
+                <label for="userId">아이디</label>
+                <div class="right">
+                  <input type="text" name="userId" id="userId">
+                </div>
+              </li>
+              <li>
+                <label for="userId">비밀번호</label>
+                <div class="right">
+                  <input type="password" name="userId" id="userId">
+                </div>
+              </li>
+              <li>
+                <input type="reset" value="리셋">
+                <input type="submit" value="로그인">
+              </li>
+            </ul>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-con">
+        Footer(주소, 라이센스)
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

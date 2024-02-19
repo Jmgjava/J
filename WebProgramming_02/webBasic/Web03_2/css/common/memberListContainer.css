@@ -1,0 +1,58 @@
+@import url(reset.css);
+@import url(index_container.css);
+
+.container {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.container .memberList {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  justify-content: center;
+}
+
+.container .memberList .memberList-con {
+  width: 800px;
+  /* border: 10px solid red; */
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px 0px;
+}
+
+.container .memberList .memberList-con table {
+  width: 100%;
+  border: 3px solid;
+
+}
+
+.container .memberList .memberList-con table h1 {
+  background-color: #000000;
+  color: #fff;
+  padding: 10px 0px;
+
+}
+
+.container .memberList .memberList-con table thead tr.t2 th {
+  padding: 5px;
+  background-color: seagreen;
+
+}
+
+.container .memberList .memberList-con table tbody tr td {
+  padding: 2px;
+  text-align: center;
+}
+
+.container .memberList .memberList-con table tfoot {
+  width: 100%;
+  height: 50px;
+  background-color: silver;
+  color: #fff;
+
+  text-align: center;
+}

@@ -1,0 +1,227 @@
+@import url(./common/reset.css);
+/* index.html */
+
+#wrap {
+  width: 100%;
+  height: auto;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+}
+
+/* header */
+
+.header {
+  width: 100%;
+  height: auto;
+  border: 1px solid;
+  box-sizing: border-box;
+  padding: 20px 10px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: row;
+  /* 기본row(생략가능), 주축을 설정 */
+  justify-content: center;
+  /* 주축 방향으로 정렬 */
+  /* 반대축 */
+  align-items: center;
+}
+
+.header .nav {
+  width: 1200px;
+  height: auto;
+  background-color: silver;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: row;
+  /* 생략 ->row */
+  /* 주축 방향 정렬 */
+  justify-content: space-between;
+}
+
+.header .nav h1.logo {
+  width: 100px;
+  height: 50px;
+}
+
+/* img 여백제거공식 */
+.header .nav h1.logo a img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.header .nav .gnb {
+  width: 500px;
+  height: 50px;
+}
+
+.header .nav .gnb ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .nav .gnb ul li {
+  /* width: 20%; */
+  flex: 1;
+  height: 50px;
+  border: 1px solid silver;
+
+  /* text-align: center;
+  line-height: 50px; */
+  display: flex;
+  flex-direction: row;
+  /* 주축(중심축) */
+  justify-content: center;
+  /* 주축방향정렬 */
+  align-items: center;
+  /* 주축반대방향정렬 */
+
+  background-color: #000000;
+  color: violet;
+}
+
+.header .gnb ul li a {
+  background-color: inherit;
+  color: inherit;
+  font-size: 11px;
+}
+
+.header .gnb ul li:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #000000;
+  text-decoration: underline;
+}
+
+/* container */
+
+.container {
+  width: 100%;
+  height: auto;
+  border: 1px solid #000000;
+
+  display: flex;
+  justify-content: center;
+}
+
+.container .join-con {
+  width: 600px;
+  height: auto;
+  border: 1px solid red;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+}
+
+.container .join-con .join_data {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.container .join-con .join_data .title{
+  width: 100%;
+  height: auto;
+  background-color: #000000;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+}
+
+.container .join-con .join_data ul {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.container .join-con .join_data ul li {
+  /* background-color: #000000; */
+  color: #fff;
+  
+  align-items: center;
+}
+
+.container .footer-con .join_data ul li:nth-child(1) {
+  background-color: silver;
+  color: #fff;
+  /* text-align: center; */
+  justify-content: center !important; /* 최우선적용 */
+  padding: 15px 0;
+}
+.container .join-con .join_data ul li {
+  box-sizing: border-box;
+  border: 1px solid #000000;
+  background-color: silver;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+/* footer */
+
+.footer {
+  width: 100%;
+  height: auto;
+  background-color: #222222;
+
+  display: flex;
+  justify-content: center;
+}
+
+.footer .footer-con {
+  width: 1200px;
+  height: 200px;
+  background-color: #000000;
+  color: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .join-con .join_data li label{
+  width: 100%;  
+  flex: 1;
+  background-color: #000000;
+  color: #fff;
+  height: 20px;
+  line-height: 20px;
+  padding: 5px 10px;
+  font-size: 11px;
+}
+
+.container .join-con .join_data li .right{
+  flex: 4;
+  background-color: silver;
+}
+
+.container .join-con .join_data li .right #phone{
+  width: 70px;
+  height: 15px;
+}
+
+.container .join-con .join_data li .right input[type=text]{
+  width: 200px;
+  height: 15px;
+}
+.container .join-con .join_data li .right input[type=password]{
+  width: 200px;
+  height: 15px;
+}
+
+.container .join-con .join_data li .me {
+  text-align: center;
+}
+.container .join-con .join_data textarea {
+  width: 100%;
+  height: auto;
+ resize: none; 
+}
