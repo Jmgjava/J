@@ -2,12 +2,11 @@
 @import url(common/header.css);
 @import url(common/index_container.css);
 @import url(common/footer.css);
-@import url(common/container.css);
 
 #wrap {
   width: 100%;
-  height: 100%;
-  border: 1px solid #000000;
+  height: auto;
+  /* border: 1px solid #000000; */
   box-sizing: border-box;
 }
 

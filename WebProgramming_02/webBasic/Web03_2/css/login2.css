@@ -5,13 +5,13 @@
 
 /* container */
 
-
-
-.container .login {
+.container {
   width: 100%;
+  height: auto;
+}
+.container .login {
   /* 전체높이 - header높이 - footer높이 - padding */
   /* height: calc(100vh - 100px - 150px); */
-  height: auto;
   box-sizing: border-box;
 
 

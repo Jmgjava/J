@@ -1,0 +1,5 @@
+@charset "UTF-8";
+@import url("WEB-INF/css/common/reset.css");
+@import url("css/common/header.css");
+@import url("css/common/footer.css");
+@import url("css/common/indexContainer.css");

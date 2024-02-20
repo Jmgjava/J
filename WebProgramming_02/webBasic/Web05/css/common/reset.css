@@ -1,15 +1,13 @@
-@charset "UTF-8";
-
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
-html, body{
+html , body {
   width: 100%;
 }
 
-ul,li{
+ul , li {
   list-style: none;
 }
 
@@ -21,8 +19,4 @@ a{
 table, th, td {
   border: 1px solid #000000;
   border-collapse: collapse;
-}
-
-header, nav, article, aside, main, footer, section {
-  display: block;
 }
