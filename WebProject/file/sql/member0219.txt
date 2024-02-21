@@ -1,0 +1,17 @@
+use testdb;    --  사용할 DB 선택
+show tables;   --  DB에 테이블 조회
+drop table member_tb19;
+-- table if not exists  테이블이 존재하면 실행하지 않고
+-- 테지이블이 존재하지 않으면 테이블을 생성
+create table if not exists member_tb19(
+	no	int  auto_increment ,
+	userId	varchar(100) not null unique ,
+	userPw	varchar(100) not null ,
+	gender	varchar(10) not null ,
+	hobby	varchar(255) not null ,
+	phone	varchar(255) not null ,
+	city	varchar(10) not null ,
+	memo	varchar(255) not null ,
+	primary key(no)
+);
+desc member_tb19;

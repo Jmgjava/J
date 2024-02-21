@@ -1,0 +1,12 @@
+로그인 성공 후 페이지
+	logout, 회원수정, 회원보기, 글 수정(내글), 글 보기(수정할)
+
+기본 페이지
+	index, 회원가입, 로그인, 글보기, 전체글보기
+권한 분리 -> 관리자, 일반
+
+index
+login.jsp -> 로그인 후 X
+logout.jsp -> 로그인 후 O
+
+.header .nav .gnb > ul > li
