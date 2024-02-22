@@ -14,4 +14,11 @@ notion
 https://www.mysql.com/ -> my Sql
 
 
+JSTL
+
+메이븐 -> https://mvnrepository.com/
+-> 자바 프로젝트 관리도구
+-> 오픈 소스 소프트웨어
+
+
 
