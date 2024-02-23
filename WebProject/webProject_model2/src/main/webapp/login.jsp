@@ -4,12 +4,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>index</title>
-<link rel="stylesheet" href="css/index.css">
+<title>login</title>
+<link rel="stylesheet" href="css/login.css">
 </head>
 <body>
 <%@include file="common/header.jsp" %>
-<%@include file="common/container.jsp" %>
+<%@include file="common/logincontainer.jsp" %>
 <%@include file="common/footer.jsp" %>
 
 </body>

@@ -5,11 +5,11 @@
 <head>
 <meta charset="UTF-8">
 <title>index</title>
-<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="css/memberDetail.css">
 </head>
 <body>
 <%@include file="common/header.jsp" %>
-<%@include file="common/container.jsp" %>
+<%@include file="common/memberDetailContainer.jsp" %>
 <%@include file="common/footer.jsp" %>
 
 </body>

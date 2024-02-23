@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>index</title>
+<link rel="stylesheet" href="css/join.css">
 </head>
 <body>
 <%@include file="common/header.jsp" %>

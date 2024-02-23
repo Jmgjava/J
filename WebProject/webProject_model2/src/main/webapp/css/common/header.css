@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+.header {
+	width: 100%;
+	background-color: #ffffff;
+	padding: 20px 10px;
+	
+	border: 0px solid #000000;
+	box-sizing: border-box;
+	
+	display: flex;
+	justify-content: center;
+	
+	box-shadow: 0 2px 2px #000000;
+}
+
+.header .nav {
+	width: 1000px;
+	background-color: #c0c0c0;
+	
+	border: 0px solid #000000;
+	box-sizing: border-box;
+	
+	display: flex;
+	justify-content: space-between;;
+}
+
+.header .nav h1.logo {
+	width: 100px;
+	height: 50px;
+	background-color: #000000;
+	color: #fff;
+	
+	border: 0px solid #000000;
+	box-sizing: border-box;
+}
+
+.header .nav .gnb {
+	width: 500px;
+	height: auto;
+	
+	
+	border: 0px solid #000000;
+	box-sizing: border-box;
+}
+
+.header .nav .gnb ul {
+	display: flex;
+	justify-content: space-between;
+}
+
+.header .nav .gnb ul li {
+	flex: 1;
+	text-align: center;
+	line-height: 50px;
+	background-color: #000000;
+	color: #fff;
+	font-size: 14px;
+	cursor: pointer;
+	
+	
+	border: 0px solid #000000;
+	box-sizing: border-box;
+}
+
+.header .nav .gnb ul li a {
+	background-color: inherit;
+	color: inherit;
+	
+}
+
+.header .nav .gnb ul li:hover {
+	background-color: #fff;
+	color: #000000;
+}

@@ -7,17 +7,18 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.web.dao.MemberDao;
+import org.web.dto.MemberDto;
 
-public class MemberInsert implements MemberService {
+public class MemberUpdate implements MemberService {
 
 	@Override
 	public void executeQueryService(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		System.out.println("회원가입");
-		int result = 0;
+		System.out.println("회원수정");
 
+		int no = Integer.parseInt(request.getParameter("no"));
 		String userId = request.getParameter("userId");
-		String userPw = request.getParameter("userPw");
+		String userPw = request.getParameter("userPw");		
 		String gender = request.getParameter("gender");
 		//
 		String[] hobbyArr = request.getParameterValues("hobby");
@@ -29,17 +30,17 @@ public class MemberInsert implements MemberService {
 
 		MemberDao dao = MemberDao.getInstance();
 
-		result = dao.insert(userId, userPw, gender, hobby, memo);
+		int result = dao.update(no, userPw, userId, gender, hobby, memo);
 
 		String returnURL = "";
 
 		if (result != 1) {
-			System.out.println("Fail");
+			System.out.println("수정실패");
 			returnURL = "/index.jsp";
+
 		} else {
-			System.out.println("success");
-//			returnURL = "memberList.jsp";
-			returnURL="/memberList.do";
+			System.out.println("수정성공");
+			returnURL = "/memberList.do";
 		}
 
 		request.setAttribute("returnURL", returnURL);
