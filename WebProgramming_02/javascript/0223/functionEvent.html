@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>javascript</title>
+  <script src="js/js_event.js" defer></script>
+  <style>
+    .content{
+      /* background-color: #ff0000af; */
+      width: 100%;
+      height: 100vh;
+      /* 다른 컨텐츠와의 상하 위치 설정 기본 */
+      z-index: 100; /* 숫자가 클수록 위에 위치 */
+      
+      /* display: none; */
+
+      /* 기존에 위치를 무시하고 브라우저 기존좌표 */
+      position: fixed;
+      left: 0;
+      top: 0;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      display: none;
+    }
+
+    .content .con {
+      width: 400px;
+      height: 400px;
+      background-color: #00ffff;
+    }
+
+    .content .con span.close{
+      background-color: #fff;
+      color: #000000;
+      padding: 0 5px;
+      cursor: pointer;
+    }
+
+    .on{
+      display: flex;
+    }
+    
+    .on2{
+      background-color: #fff000;
+      color: #fff;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <button class="btn" onclick="fn1()">BUTTON1</button>
+    <button class="btn">BUTTON2</button>
+    <button class="btn">BUTTON3</button>
+    <button class="btn">BUTTON4</button>
+    <button class="btn">BUTTON5</button>
+
+  </div>
+  <div class="content">
+    <div class="con">
+      <span class="close">X</span>
+      <h1>chatbot</h1>
+    </div>
+  </div>
+  
+</body>
+</html>
